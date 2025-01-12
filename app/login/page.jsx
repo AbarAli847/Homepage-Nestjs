@@ -1,6 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
-const LoginForm = () => {
+const LoginhtmlForm = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
     <div>
       <div className="bg-white shadow-md rounded-md overflow-hidden max-w-md w-full mx-auto">
@@ -16,7 +23,7 @@ const LoginForm = () => {
           <form action="#" method="POST">
             <div className="mb-4">
               <label
-                for="username"
+                htmlFor="username"
                 className="block text-gray-700 text-sm font-medium mb-2"
               >
                 Username
@@ -31,14 +38,14 @@ const LoginForm = () => {
             </div>
             <div className="mb-4">
               <label
-                for="password"
+                htmlFor="password"
                 className="block text-gray-700 text-sm font-medium mb-2"
               >
                 Password
               </label>
               <div className="relative">
                 <input
-                  type="password"
+                  type={passwordVisible ? "text" : "password"}
                   id="password"
                   name="password"
                   placeholder="Enter your password"
@@ -47,9 +54,9 @@ const LoginForm = () => {
                 <button
                   type="button"
                   className="absolute inset-y-0 right-3 text-gray-500"
-                  onclick="togglePasswordVisibility()"
+                  onClick={togglePasswordVisibility}
                 >
-                  Show
+                  {passwordVisible ? "Hide" : "Show"}
                 </button>
               </div>
             </div>
@@ -84,4 +91,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default LoginhtmlForm;

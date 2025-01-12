@@ -1,10 +1,11 @@
 import { navlinks } from "@/lib/constants";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-blue-950 text-white ">
+      <nav className="bg-blue-950 text-white mb-3">
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* <!-- Logo --> */}
           <a>
@@ -23,6 +24,10 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+
+            <Link href="/login" className="hover:text-blue-300">
+              Login
+            </Link>
           </div>
         </div>
       </nav>
