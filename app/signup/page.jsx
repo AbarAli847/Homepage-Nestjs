@@ -5,7 +5,7 @@ const SignUp = () => {
     <div>
       <div className="bg-white shadow-md rounded-md overflow-hidden max-w-lg w-full mx-auto">
         <div className="bg-blue-600 text-white p-8">
-          <h1 className="text-3xl font-bold">iCopify</h1>
+          <h1 className="text-3xl font-bold">Elevate Rank</h1>
           <p className="mt-2 text-sm">
             Never Pay Until You're 100% Satisfied - Increasing traffic, leads,
             and sales.
