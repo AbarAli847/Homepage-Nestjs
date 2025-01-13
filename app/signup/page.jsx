@@ -60,7 +60,7 @@ const SignUp = () => {
               <span className="text-gray-600">
                 By creating an account, you agree to the
                 <a href="#" className="text-blue-600 hover:underline">
-                  iCopify Terms of Service
+                  ElevateRank Terms of Service
                 </a>
                 and to occasionally receive marketing emails from us. Please
                 read our
