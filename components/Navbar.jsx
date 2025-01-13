@@ -28,6 +28,9 @@ const Navbar = () => {
             <Link href="/login" className="hover:text-blue-300">
               Login
             </Link>
+            <Link href="/signup" className="hover:text-blue-300">
+              SIGN UP
+            </Link>
           </div>
         </div>
       </nav>

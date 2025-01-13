@@ -13,7 +13,6 @@ const Home = () => {
         <CompanyLogoes />
         <Cards />
         <OpacityIamge />
-        {/* <Footer /> */}
       </div>
     </div>
   );
