@@ -12,7 +12,7 @@ const SignUp = () => {
           </p>
         </div>
         <div className="p-8">
-          <h2 className="text-2xl font-bold mb-6">Create New Account</h2>
+          <h2 className="text-2xl font-bold mb-6">Create</h2>
           <form action="#" method="POST">
             <div className="mb-4">
               <label
